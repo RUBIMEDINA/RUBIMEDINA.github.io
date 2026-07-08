@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rubi Medina | Portfolio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>RM</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HOME ============ -->
+    <section id="home" class="home-section">
+        <div class="home-container">
+            <div class="home-content">
+                <div class="home-image">
+                    <img src="assets/images/profile.jpg" alt="Rubi Medina" />
+                </div>
+                <div class="home-text">
+                    <p class="greeting">Hi! 👋</p>
+                    <h1>I'm <span class="highlight">Rubi Medina</span></h1>
+                    <h2>Software Development Student</h2>
+                    <div class="typing-wrapper">
+                        <span class="typing-text">Full Stack Developer</span>
+                    </div>
+                    <div class="home-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="rubi_proyect.pdf" download class="btn btn-secondary">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-scroll">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">👩 About Me</h2>
+            <div class="about-content">
+                <p>
+                    I am a student at the Universidad Tecnológica del Retoño, passionate about programming
+                    and continuous learning. I enjoy working on innovative technology projects that combine
+                    programming, electronics, and design.
+                </p>
+                <p>
+                    During my professional internship at CIEA, I participated in the development of a School
+                    Management System for multiple campuses, building both Frontend and Backend modules. I also
+                    collaborated on the development of an Artificial Intelligence-based application to automate
+                    responses and generate business reports, as well as the development and deployment of
+                    institutional websites.
+                </p>
+                <p>
+                    I enjoy creating technological solutions that help improve real processes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">💼 Experience</h2>
+            <div class="experience-card">
+                <div class="exp-header">
+                    <div class="exp-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="exp-title">
+                        <h3>Full Stack Developer Intern</h3>
+                        <h4>CIEA</h4>
+                        <p class="exp-date">September 2025 – December 2025</p>
+                    </div>
+                </div>
+                <ul class="exp-list">
+                    <li><i class="fas fa-check"></i> Developed a School Management System for multiple campuses.</li>
+                    <li><i class="fas fa-check"></i> Created Frontend and Backend modules.</li>
+                    <li><i class="fas fa-check"></i> Worked with AI software for automated responses.</li>
+                    <li><i class="fas fa-check"></i> Published institutional websites.</li>
+                    <li><i class="fas fa-check"></i> Generated automatic user accounts.</li>
+                    <li><i class="fas fa-check"></i> Worked in a multidisciplinary team.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">🚀 Projects</h2>
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/project1.png" alt="School Management System" />
+                </div>
+                <div class="project-info">
+                    <h3>School Management System</h3>
+                    <p>School management system for multiple campuses developed during my internship at CIEA.</p>
+                    <div class="project-tech">
+                        <span>ASP.NET</span><span>HTML</span><span>CSS</span>
+                        <span>JavaScript</span><span>MySQL</span>
+                    </div>
+                    <button class="btn-readmore" data-project="1">Read More</button>
+                </div>
+                <div class="project-descriptions" id="desc-1">
+                    <div class="desc-block">
+                        <h4>🔧 Technical</h4>
+                        <p>I developed a School Management System for multiple campuses using ASP.NET, HTML, CSS, JavaScript, and MySQL. I implemented user authentication, role management (students, teachers, administration), and complete administrative modules. The system automatically generates users and passwords and allows management of documents, transcripts, and reports.</p>
+                        <div class="diagram">
+                            <h5>Flow Diagram</h5>
+                            <div class="flowchart">
+                                <div class="flow-step">Users</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">Login</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">Dashboard</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-row">
+                                    <span>Students</span>
+                                    <span>Teachers</span>
+                                    <span>Documents</span>
+                                    <span>Transcripts</span>
+                                    <span>Reports</span>
+                                </div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">Database</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc-block">
+                        <h4>💼 Business</h4>
+                        <p>The project centralized the academic information of multiple campuses, reducing manual administrative work by 60%. It improved access to information for students, teachers, and administrators, making report generation and data-driven decision-making easier.</p>
+                    </div>
+                    <div class="desc-block">
+                        <h4>📖 Story</h4>
+                        <p>During my professional internship at CIEA, I had the opportunity to participate in the development of a system used by different campuses. I was responsible for both frontend and backend modules, working closely with the team to deploy the platform and ensure its proper functioning.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/project2.jpeg" alt="Medical Appointment App" />
+                </div>
+                <div class="project-info">
+                    <h3>Medical Appointment App</h3>
+                    <p>UX/UI design of a mobile application for managing medical appointments.</p>
+                    <div class="project-tech">
+                        <span>Figma</span><span>UX/UI</span><span>Prototype</span>
+                    </div>
+                    <button class="btn-readmore" data-project="2">Read More</button>
+                </div>
+                <div class="project-descriptions" id="desc-2">
+                    <div class="desc-block">
+                        <h4>🔧 Technical</h4>
+                        <p>I designed the complete prototype of a mobile application in Figma. I created all screens, the user experience and interface (UX/UI), connections between views, endpoint structure, and navigation flows. It includes patient and doctor registration, appointment scheduling, and medical information consultation.</p>
+                        <div class="diagram">
+                            <h5>Navigation Diagram</h5>
+                            <div class="flowchart">
+                                <div class="flow-step">Splash</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">Login / Register</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-row">
+                                    <span>Patients</span>
+                                    <span>Doctors</span>
+                                </div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">Dashboard</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-row">
+                                    <span>Book Appointment</span>
+                                    <span>My Appointments</span>
+                                    <span>Profile</span>
+                                    <span>History</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc-block">
+                        <h4>💼 Business</h4>
+                        <p>The application optimizes medical appointment management, reducing waiting times and improving the patient experience. It allows doctors to manage their schedules and patients to book appointments quickly and easily, increasing the efficiency of the clinic.</p>
+                    </div>
+                    <div class="desc-block">
+                        <h4>📖 Story</h4>
+                        <p>This project was born from the need to digitize appointment management in small clinics. I designed each screen with accessibility and ease of use in mind, ensuring that both patients and doctors could navigate intuitively.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/project3.jpeg" alt="Smart University Building" />
+                </div>
+                <div class="project-info">
+                    <h3>Smart University Building</h3>
+                    <p>Intelligent model with electronic automation and mobile control.</p>
+                    <div class="project-tech">
+                        <span>Electronics</span><span>IoT</span><span>Arduino</span>
+                    </div>
+                    <button class="btn-readmore" data-project="3">Read More</button>
+                </div>
+                <div class="project-descriptions" id="desc-3">
+                    <div class="desc-block">
+                        <h4>🔧 Technical</h4>
+                        <p>I participated in the development of an intelligent model for the Universidad Tecnológica del Retoño. I designed and implemented electronic circuits, an automatic lighting system with photoresistors, a fan controlled by a DC motor, an electronic counter with LEDs, and the integration of devices controlled from a mobile app.</p>
+                        <div class="diagram">
+                            <h5>Components Diagram</h5>
+                            <div class="flowchart">
+                                <div class="flow-step">Mobile App</div>
+                                <div class="flow-arrow">↕</div>
+                                <div class="flow-step">Controller (ESP8266)</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-row">
+                                    <span>LEDs</span>
+                                    <span>DC Motor</span>
+                                    <span>Photoresistor</span>
+                                    <span>Display</span>
+                                </div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">Lighting / Ventilation / Counter</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc-block">
+                        <h4>💼 Business</h4>
+                        <p>The project demonstrates how automation can reduce energy consumption in university buildings. The automatic lighting system and ventilation control optimize resources, reducing operating costs and improving sustainability.</p>
+                    </div>
+                    <div class="desc-block">
+                        <h4>📖 Story</h4>
+                        <p>As part of an integrative project, I collaborated with classmates to build a model representing the future of the university. My focus on the electronics part allowed me to apply my mechatronics knowledge to create a functional and scalable system.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/project4.png" alt="AI Assistant" />
+                </div>
+                <div class="project-info">
+                    <h3>AI Assistant</h3>
+                    <p>AI-based application for automatic responses and business reports.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>AI</span><span>APIs</span>
+                    </div>
+                    <button class="btn-readmore" data-project="4">Read More</button>
+                </div>
+                <div class="project-descriptions" id="desc-4">
+                    <div class="desc-block">
+                        <h4>🔧 Technical</h4>
+                        <p>I developed, together with a classmate, an application based on Artificial Intelligence to automatically respond to messages and generate business reports. I implemented natural language processing and API connections to automate responses and data analysis.</p>
+                        <div class="diagram">
+                            <h5>Flow Diagram</h5>
+                            <div class="flowchart">
+                                <div class="flow-step">Incoming Message</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">NLP Processing</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">Intent Analysis</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-row">
+                                    <span>Automatic Response</span>
+                                    <span>Report</span>
+                                </div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">API / Database</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc-block">
+                        <h4>💼 Business</h4>
+                        <p>The application reduces customer response time by 80% and automates business report generation, allowing teams to focus on strategic tasks. It improves operational efficiency and customer satisfaction.</p>
+                    </div>
+                    <div class="desc-block">
+                        <h4>📖 Story</h4>
+                        <p>During my internship at CIEA, my colleague and I saw the opportunity to use AI to solve real business communication problems. We developed this solution that is now used internally to optimize processes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/project5.png" alt="Institutional Website" />
+                </div>
+                <div class="project-info">
+                    <h3>Institutional Website</h3>
+                    <p>Development and deployment of institutional websites.</p>
+                    <div class="project-tech">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        <span>Deployment</span>
+                    </div>
+                    <button class="btn-readmore" data-project="5">Read More</button>
+                </div>
+                <div class="project-descriptions" id="desc-5">
+                    <div class="desc-block">
+                        <h4>🔧 Technical</h4>
+                        <p>I developed and deployed institutional websites using HTML, CSS, JavaScript, and deployment tools on servers. I implemented responsive design, performance optimization, and SEO best practices to improve visibility and accessibility.</p>
+                        <div class="diagram">
+                            <h5>Deployment Diagram</h5>
+                            <div class="flowchart">
+                                <div class="flow-step">Local Development</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">GitHub</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">CI/CD</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">Server</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">Published Website</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc-block">
+                        <h4>💼 Business</h4>
+                        <p>Institutional websites improve the organization’s digital presence, facilitating communication with students, parents, and staff. Professional deployment ensures availability, security, and optimal performance.</p>
+                    </div>
+                    <div class="desc-block">
+                        <h4>📖 Story</h4>
+                        <p>At CIEA, I participated in the development of websites for different institutions. I learned the importance of clear and functional design, and how good deployment can make a difference in the user experience.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title">📚 Education</h2>
+            <div class="education-card">
+                <div class="edu-item">
+                    <div class="edu-icon"><i class="fas fa-university"></i></div>
+                    <div class="edu-info">
+                        <h3>Universidad Tecnológica El Retoño</h3>
+                        <p class="edu-date">2023 - Present</p>
+                        <ul>
+                            <li>University Technician in IT and Multiplatform Software Development</li>
+                            <li>Engineering in Software Development and Management</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-icon"><i class="fas fa-school"></i></div>
+                    <div class="edu-info">
+                        <h3>Cecytea Morelos Aguascalientes</h3>
+                        <p class="edu-date">2020 - 2023</p>
+                        <ul>
+                            <li>Technological Baccalaureate in Mechatronics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">🛠 Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-tags">
+                        <span>ASP.NET</span>
+                        <span>C#</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-paint-brush"></i> Design</h3>
+                    <div class="skill-tags">
+                        <span>Figma</span>
+                        <span>UI Design</span>
+                        <span>UX Design</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Other</h3>
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">📞 Contact</h2>
+            <div class="contact-content">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:medinarubi30@gmail.com">medinarubi30@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:4491204081">449-120-40-81</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/rubimedina" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <p>&copy; 2026 Rubi Neftali Medina Charles. All rights reserved.</p>
+    </footer>
+
+    <!-- ============ SCROLL TO TOP ============ -->
+    <button id="scrollTopBtn" class="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html> 
